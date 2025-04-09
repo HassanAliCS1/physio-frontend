@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  color: $deep-navy;
+  background-color: rgb(246, 247, 251);
+  border-radius: 8px;
+  width: "100%";
+  display: flex;
+  flex-direction: row;
+  column-gap: 8%;
+
+  .injury-details-col {
+    padding: 40px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $background-gray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $hover-orange;
+      border-radius: 4px;
+    }
+
+    .section {
+      padding-bottom: 1.5%;
+      padding-top: 1.5%;
+
+      .injury-header {
+        margin-top: 22px;
+        font-weight: 500;
+      }
+
+      .injury-header-1 {
+        font-weight: 500;
+      }
+
+      .text-hint {
+        margin-bottom: 2px;
+        font-size: $small-text;
+        color: $dark-gray;
+      }
+
+      .disabled-field {
+        color: $light-gray;
+      }
+
+      .checkbox-section2 {
+        display: grid;
+
+        .box-container {
+          display: flex;
+        }
+      }
+
+      .unselected-option {
+        color: $gray !important;
+        cursor: default !important;
+        pointer-events: none;
+
+        &:hover {
+          background-color: none !important;
+          background-color: transparent !important;
+          cursor: default;
+        }
+
+        .Mui-checked {
+          color: $light-gray !important;
+          cursor: default;
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

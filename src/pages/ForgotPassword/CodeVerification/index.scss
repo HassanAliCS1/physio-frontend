@@ -1,0 +1,49 @@
+.code-paper{
+    .form-wrapper{
+        display: flex;
+        justify-content: center;
+        .form-detail-wrapper{
+            display: grid;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px !important;
+            margin-top: 4vh;
+            width: 25rem;
+            .code-set-wrapper{
+                display: flex;
+                justify-content: center;
+                .code-set{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 25px;
+                    justify-content: center;
+                    .code-input{
+                        background-color: transparent;
+                        height: 4rem;
+                        width: 4rem;
+                        border-radius: 10px;
+                        color: $deep-navy;
+                        text-align: center;
+                        font-size: 25px;
+                        border: 1px solid $gray;
+                        outline: none;
+                        &:focus{
+                            border: 1px solid$orange1;
+                        }
+                    }
+                }
+            }
+            .resend-content{
+                display: flex;
+                justify-content: center;
+                h6{
+                    color: $gray;
+                    font-weight: 400;
+                }
+                .resend-link{
+                    color: $orange1;
+                }
+            }
+        }
+    }
+}

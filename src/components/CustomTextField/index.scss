@@ -1,0 +1,58 @@
+.custom-text-field{
+    &:hover{
+      outline: none !important;
+      border: none !important;
+    }
+    .MuiOutlinedInput-root {
+      background-color: $white;
+      border-radius: 5px; 
+    }
+  
+    .MuiInputLabel-root {
+      color: $gray; 
+    }
+    .MuiInputBase-input::placeholder {
+      color: $orange1 !important;
+      opacity: 1 !important;
+    }
+
+    .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+      border-color: $hover-orange;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $gray; 
+    }
+  
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: $dark-gray; 
+    }
+  
+    .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $gray !important; 
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      background-color: $white !important; 
+      color: $deep-navy !important; 
+      -webkit-text-fill-color: $dark-gray !important; 
+      transition: background-color 5000s ease-in-out 0s; 
+    }
+    .MuiInputLabel-root.Mui-focused, 
+    .MuiInputLabel-root.MuiFormLabel-filled {
+      color: $dark-gray !important; 
+    }
+}
+
+@function convert-color-to-filter($color) {
+  @return invert(54%) sepia(55%) saturate(2602%) hue-rotate(353deg) brightness(101%) contrast(101%);
+}
+.custom-text-field {
+  .MuiOutlinedInput-input {
+    &[type="date"]::-webkit-calendar-picker-indicator {
+      filter: convert-color-to-filter($orange1) !important;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.account {
+    color: $deep-navy;
+    padding: 24px 40px 40px;
+
+    @media #{$xs} {
+        padding: 24px 20px 20px;
+    }
+
+    .account-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media #{$xs} {
+            gap: 20px;
+        }
+
+        .account-details-wrapper {
+            width: 100%;
+            padding: 40px;
+            background-color: rgb(246, 247, 251);
+            border-radius: 8px;
+
+            @media #{$xs} {
+                padding: 20px;
+                width: auto;
+            }
+    
+            .account-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                @media #{$xs} {
+                    flex-direction: column;
+                    gap: 40px;
+                }
+
+                .details-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    h2 {
+                        font-weight: 500;
+                    }
+
+                    .info-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        label {
+                            width: 220px;
+                            font-size: $normal-text;
+                            font-weight: 400;
+                            opacity: 0.8;
+
+                            @media #{$xs} {
+                                width: 80px;
+                            }
+                        }
+
+                        p {
+                            font-size: $normal-text;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .password-option {
+                            min-width: 120px;
+                        }
+
+                        button {
+                            outline: none;
+                            border: none;
+                            padding: 0;
+                            background-color: transparent;
+
+                            .icon-text {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                opacity: 0.5;
+
+                                p {
+                                    font-size: 12px;
+                                    color: $dark-gray;
+                                }
+                            }
+
+                            .hide-icons {
+                                border: none;
+                                padding: 0;
+                                color: $deep-navy;
+                                font-size: $normal-text;
+                                opacity: 0.8;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .edit-details-container {
+            display: none;
+            width: 100%;
+        }
+
+        .injury-form-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+        }
+    }
+}

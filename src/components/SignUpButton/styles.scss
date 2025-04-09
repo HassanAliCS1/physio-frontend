@@ -1,0 +1,33 @@
+.signup-btn-container {
+    .signup-btn {
+        width: max-content;
+        padding: 8px 16px;
+        border: 2px solid $deep-navy;
+        border-radius: 8px;
+        color: $deep-navy;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            border: 2px solid $burnt-orange;
+            background-color: $burnt-orange;
+            color: $white;
+        }
+
+        @media #{$xs} {
+            font-size: 14px;
+            letter-spacing: 0.2px;
+            padding: 8px 16px;
+            width: 100%;
+        }
+
+        @media #{$sm} {
+            width: 100%;
+        }
+    }
+}

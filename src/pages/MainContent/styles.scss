@@ -1,0 +1,27 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    .header-bar{
+        width: "100vw";
+        background-color: rgb(255, 255, 255);
+        position:sticky;
+        top: 0%;
+        z-index: 900;
+    }
+    .main-content-wrapper {
+        display: flex;
+        flex: 1;
+        
+        .side-bar{
+            position: relative; 
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto; 
+            margin-left: 250px; 
+        }
+    }
+}

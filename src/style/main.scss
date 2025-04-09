@@ -1,0 +1,59 @@
+//css variables
+@import "./variable.scss";
+@import "../index.scss";
+@import "../App.scss";
+
+//common components
+@import "../components/SignUpButton/styles.scss";
+@import "../components/LoginButton/styles.scss";
+@import "../components/CommonBtn/styles.scss";
+@import "../components/HeaderBar/styles.scss";
+@import "../components/SideBar/styles.scss";
+
+//page
+
+@import "../components/CustomTextField/index.scss";
+@import "../components/CustomButton/index.scss";
+@import "../components/RatingSlider/index.scss";
+@import "../components/CheckBox/index.scss";
+@import "../components/DropDownMenu/index.scss";
+
+@import "../components/Footer/styles.scss";
+
+// landing page
+@import "../pages/LandingPage/styles.scss";
+@import "../pages/LandingPage/HeroSection/styles.scss";
+@import "../pages/LandingPage/SectionTwo/styles.scss";
+@import "../pages/LandingPage/SectionThree/styles.scss";
+@import "../pages/LandingPage/SectionSix/style.scss";
+@import "../pages/LandingPage/BottomRibbon/styles.scss";
+
+//Main content styles
+@import "../pages/MainContent/styles.scss";
+
+//dashboard styles
+@import "../pages/MainContent/Dashboard/styles.scss";
+
+//exercises styles
+@import "../pages/MainContent/Exercise/styles.scss";
+@import "../pages/MainContent/ExerciseDetails/styles.scss";
+
+@import "../pages/LandingPage/SectionFour/styles.scss";
+@import "../pages/LandingPage/ImageSlider/styles.scss";
+@import "../pages/MainContent/Account/styles.scss";
+@import "../pages/MainContent/Account/components/EditAccount/styles.scss";
+@import "../pages/MainContent/Account/components/InjuryDataForm/styles.scss";
+@import "../pages/MainContent/Experience/index.scss";
+
+//signup page
+@import "../pages/SignUp/InjuryDetailForm/index.scss";
+@import "../pages/SignUp/SignUpForm/index.scss";
+
+//sigin page 
+@import "../pages/SignIn/index.scss";
+
+//forgot-password
+@import "../pages/ForgotPassword/index.scss";
+@import "../pages/ForgotPassword/CodeVerification/index.scss";
+@import "../pages/ForgotPassword/ForgotPasswordMain/index.scss";
+@import "../pages/ForgotPassword/NewPassword/index.scss";

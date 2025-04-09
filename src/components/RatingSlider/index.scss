@@ -1,0 +1,30 @@
+.rating-slider {
+    width: 100%;
+    margin-top: 10px;
+  
+    .MuiSlider-root {
+      color: $orange1; 
+    }
+  
+    .MuiSlider-thumb {
+      background-color: $orange1; 
+    }
+  
+    .MuiSlider-track {
+      background-color: $orange1; 
+    }
+  
+    .MuiSlider-rail {
+      background-color: $dark-gray; 
+    }
+  
+    .MuiSlider-markLabel {
+      font-size: 12px;
+      color: $dark-gray;
+    }
+}
+
+.disabled-field {
+  pointer-events: none;
+}
+  

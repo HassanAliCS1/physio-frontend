@@ -1,0 +1,19 @@
+.check-box {
+    color: $orange1 !important; 
+  
+    .MuiSvgIcon-root {
+      font-size: 24px; 
+    }
+  
+    &:hover {
+      background-color: rgba(255, 87, 34, 0.1); 
+    }
+  
+    .Mui-checked {
+      color: $orange1 !important; 
+    }
+}
+
+.disable-label {
+  color: $gray !important;
+}

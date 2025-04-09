@@ -1,0 +1,131 @@
+.injury-detail{
+  height: 100vh !important;
+  color: $deep-navy;
+  font-family: $Poppins;
+  background-color: $white1;
+
+  .main-side-wrapper {
+    height: 100% !important;
+       
+    .left-section {
+      height: 100% !important;
+
+      @media #{$sm} {
+        display: none;
+      }
+    }
+
+    .right-section {
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+
+      @media #{$xs} {
+        padding: 40px 10px !important;
+      }
+
+      @media #{$sm} {
+        padding: 60px 20px !important;
+      }
+
+      h4 {
+        margin-top: 0;
+        text-align: center;
+        padding-right: 10%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid $hover-orange;
+      }
+
+      .injury-detail-wrapper {
+        font-family: $Poppins;
+        height: 90vh;
+        overflow: hidden;
+        width: 80%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @media #{$xs} {
+          width: 90%;
+          height: 100%;
+        }
+
+        @media #{$sm} {
+          min-width: 90%;
+          height: 100%;
+        }
+
+        .title-wrapper {
+          margin-top: 0;
+
+          h4 {
+            margin: 0;
+            margin-top: 0;
+          }
+        }
+
+        .injury-details-form {
+          flex: 1;
+          overflow-y: auto;
+          color: $deep-navy ;
+          font-family: $Poppins;
+          background-color: $background-gray;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          @media #{$xs} {
+            padding: 10px;
+          }
+
+          @media #{$sm} {
+            width: 500px;
+            margin: 0 auto;
+          }
+
+          &::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: $background-gray;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: $hover-orange;
+            border-radius: 4px;
+          }
+
+          .checkbox-section2 {
+            display: grid;
+          }
+
+          .question {
+            font-weight: 500;
+            font-size: 16px;
+            margin-top: 1vh;
+          }
+
+          .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+          }
+
+          .exercise-status {
+            padding: 4px 32px;
+
+            .status {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

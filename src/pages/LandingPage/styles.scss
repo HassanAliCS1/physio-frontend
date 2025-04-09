@@ -1,0 +1,26 @@
+.landing-page-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  .header{
+    width: "100vw";
+    position:sticky;
+    top: 0%;
+    z-index: 900;
+  }
+
+  .landing-page {
+    color: $deep-navy;
+    background-color: $white;
+    font-family: $Roboto;
+    margin: 0 120px;
+
+    @media #{$xs} {
+      margin: 0 20px;
+    }
+
+    @media #{$sm} {
+      margin: 0 40px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.fogotpassword-main-section{
+    .form-wrapper{
+        display: flex;
+        justify-content: center;
+        .form-detail-wrapper{
+            display: grid;
+            flex-direction: column;
+            gap: 30px !important;
+            margin-top: 4vh;
+            width: 25rem;
+        }
+    }
+}

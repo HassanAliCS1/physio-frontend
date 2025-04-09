@@ -1,0 +1,27 @@
+.drop-down{
+    .MuiInputLabel-root.Mui-focused, 
+    .MuiInputLabel-root.MuiFormLabel-filled {
+      color: $dark-gray !important; 
+    }
+    .MuiOutlinedInput-notchedOutline {
+        border-color: $gray; 
+    }
+    
+    &:hover .MuiOutlinedInput-notchedOutline {
+        border-color: $dark-gray; 
+    }
+    
+    .Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: $gray !important; 
+    }
+    .MuiInputLabel-root {
+        color: $gray; 
+    }
+    .MuiInputBase-input::placeholder {
+        color: $orange1 !important;
+        opacity: 1 !important;
+    }
+    .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: $hover-orange;
+    }
+}

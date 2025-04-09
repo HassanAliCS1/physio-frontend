@@ -16,7 +16,7 @@ npm install
 #to run the code -->
 npm run dev
 
-Then open the frontend in [localhost/3000](http://localhost:3000/)
+Then open the frontend in [localhost/3000](http://localhost:3000/) or [localhost/3001](http://localhost:3001/)
 
 
 

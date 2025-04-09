@@ -11,7 +11,7 @@ import Experience from "./pages/MainContent/Experience";
 
 const App = () => {
   return (
-    <Router>
+    <Router  basename="/physio-frontend">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpForm />} />
